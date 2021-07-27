@@ -40,6 +40,6 @@ stages:
     - task: Docker@2
       inputs:
         containerRegistry: 'ssrslmdockerhub'
-        repository: 'docker-image-from-azure-pipeline'
+        repository: 'ssrslm/docker-image-from-azure-pipeline'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
